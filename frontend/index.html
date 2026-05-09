@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mini CRM Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <h2>Mini CRM</h2>
+
+        </div>
+
+        <ul>
+
+            <li class="active">Dashboard</li>
+
+            <li>Leads</li>
+
+            <li>Analytics</li>
+
+            <li>Reports</li>
+
+            <li>Settings</li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+
+    <main class="main">
+
+        <!-- Topbar -->
+
+        <div class="topbar">
+
+            <div>
+
+                <h1>Client Lead Management</h1>
+
+                <p>Manage your clients professionally</p>
+
+            </div>
+
+            <div class="profile">
+
+                <img src="https://i.pravatar.cc/100">
+
+            </div>
+
+        </div>
+
+        <!-- Dashboard Cards -->
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h2>120</h2>
+
+                <p>Total Leads</p>
+
+            </div>
+
+            <div class="card">
+
+                <h2>45</h2>
+
+                <p>New Leads</p>
+
+            </div>
+
+            <div class="card">
+
+                <h2>32</h2>
+
+                <p>Contacted</p>
+
+            </div>
+
+            <div class="card">
+
+                <h2>18</h2>
+
+                <p>Converted</p>
+
+            </div>
+
+        </div>
+
+        <!-- Main Grid -->
+
+        <div class="grid">
+
+            <!-- Add Lead -->
+
+            <div class="glass">
+
+                <h2>Add New Lead</h2>
+
+                <form id="leadForm">
+
+                    <input type="text" id="name" placeholder="Client Name" required>
+
+                    <input type="email" id="email" placeholder="Client Email" required>
+
+                    <input type="text" id="source" placeholder="Lead Source" required>
+
+                    <textarea id="notes" placeholder="Client Notes"></textarea>
+
+                    <button type="submit">Add Lead</button>
+
+                </form>
+
+            </div>
+
+            <!-- Leads -->
+
+            <div class="glass">
+
+                <h2>Recent Leads</h2>
+
+                <div id="leadList"></div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
